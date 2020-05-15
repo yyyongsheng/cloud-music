@@ -1,0 +1,62 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/palylist/palylist",
+			"style": {
+				"navigationBarTitleText": "音乐",
+				"enablePullDownRefresh": true
+			}
+		}
+        ,{
+            "path" : "pages/find/find",
+            "style" : {
+				"navigationBarTitleText": "发现"
+			}
+        }
+        ,{
+            "path" : "pages/mine/mine",
+            "style" : {
+				"navigationBarTitleText": "我的"
+			}
+        }
+        ,{
+            "path" : "pages/musiclist/musiclist",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/player/player",
+            "style" : {}
+        }
+ 
+    ],
+	"requiredBackgroundModes": [
+	    "audio"
+	  ],
+	"tabBar": {
+	    "list": [
+	      {
+	        "pagePath": "pages/palylist/palylist",
+	        "text": "音乐",
+			"iconPath":"static/tabbar/music.png",
+			"selectedIconPath":"static/tabbar/selectedmusic.png"
+	      },
+	      {
+	        "pagePath": "pages/find/find",
+	        "text": "发现",
+			"iconPath":"static/tabbar/find.png",
+			"selectedIconPath":"static/tabbar/selectedfind.png"
+	      },
+		  {
+		    "pagePath": "pages/mine/mine",
+		    "text": "我的",
+			"iconPath":"static/tabbar/mine.png",
+			"selectedIconPath":"static/tabbar/selectedmine.png"
+		  }
+	    ]
+	  },
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#DD001B",
+		"backgroundColor": "#F8F8F8"
+	}
+}
